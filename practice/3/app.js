@@ -39,7 +39,7 @@ app.get("/products/:id" , (req , res) => {
     res.json(product)
     console.log(req.params)
 }
-)
+)  //recheck it
 
 
 //query params and search query params
@@ -48,15 +48,22 @@ app.get("/products/:id" , (req , res) => {
 
 
 
-
-
-
-
-
-
-
-
 app.listen(PORT , () => console.log(`server is running on http://localhost:${PORT}`))
 
 
 
+//Middlewares:
+//Middlewares are functions that have access to the request and response objects.  Middleware functions can perform the following tasks:
+//Execute any code.
+//Make changes to the request and the response objects.
+//End the request-response cycle.
+//Call the next middleware function in the stack.
+
+//If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging.
+
+
+app.use((req , res , next) => {
+    console.log("Hit the middleware function")  
+    next()
+}
+)  //recheck it
