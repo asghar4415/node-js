@@ -42,3 +42,7 @@ app.listen(port, () => console.log(`server running on localhost:${port}`) )
 //to stop the server, press "ctrl + c" in the terminal.
 //to run the server in the background, type "node index.js &" in the terminal.
 //if you make a change in the file, you need to stop the server and run it again to see the changes.
+
+
+
+//another way of running this file is (npm run start) command. if you look in package.json file, you will see a script called "start" which runs the file. now you know how (npm run dev) command works in react. it runs the file mentioned in the script.
