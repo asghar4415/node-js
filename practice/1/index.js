@@ -5,7 +5,7 @@ import express from 'express';
 
 const app = express();
 
-const port = 5000;
+const port = 5000;///a port number is a way to identify a specific process to which an internet or other network message is to be forwarded when it arrives at a server. the port number is in the header of the message and is used to determine to which process the message should be delivered.
 
 app.get("/" , (request, response) => 
 {
