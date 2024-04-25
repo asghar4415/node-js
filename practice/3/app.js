@@ -48,10 +48,6 @@ app.get("/products/:id" , (req , res) => {
 
 
 
-app.listen(PORT , () => console.log(`server is running on http://localhost:${PORT}`))
-
-
-
 //Middlewares:
 //Middlewares are functions that have access to the request and response objects.  Middleware functions can perform the following tasks:
 //Execute any code.
@@ -67,3 +63,6 @@ app.use((req , res , next) => {
     next()
 }
 )  //recheck it
+
+
+app.listen(PORT , () => console.log(`server is running on http://localhost:${PORT}`))
