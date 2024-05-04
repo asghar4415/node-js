@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
-const uri = "mongodb+srv://admin:admin@cluster0.toebppr.mongodb.net/"
+// connecting to mongoDB
+const uri = "mongodb://127.0.0.1:27017/practice-1";
 mongoose.connect(uri)
     .then(res => {
         console.log("mongoDB CONNECTED!")

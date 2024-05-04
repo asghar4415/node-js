@@ -1,0 +1,4 @@
+HTTP headers: hhttp headers are the information that is passed between the client and the server. The headers are used to pass information about the request and the response. 
+
+HTTP status codes: HTTP status codes are the codes that are returned by the server to the client. The status codes are used to indicate the status of the request.
+

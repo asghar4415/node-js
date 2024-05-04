@@ -1,0 +1,5 @@
+First make schema where we define the structure of the data that we want to store in the database.
+schema- model
+Then we create a model based on the schema.
+model- collection
+Then we create a collection based on the model.
