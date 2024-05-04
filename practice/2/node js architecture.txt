@@ -1,0 +1,11 @@
+Node js architecture:  Nodejs works on the event-driven architecture. It is a single-threaded event loop that helps in handling multiple connections simultaneously. 
+ 
+- the loop wil run forever, and it will keep on checking for any new events.
+- if there is any event, it will execute the callback function.
+- if there is no event, it will keep on checking for the new events.
+- it will keep on checking for the new events until the process is killed.
+ 
+-Blocking operations: Nodejs is a single-threaded event loop that can handle multiple connections simultaneously. But if there is any blocking operation, it will block the event loop and will not be able to handle multiple connections simultaneously.
+
+-Non-blocking operations: Nodejs is a single-threaded event loop that can handle multiple connections simultaneously. If there is any non-blocking operation, it will not block the event loop and will be able to handle multiple connections simultaneously.
+

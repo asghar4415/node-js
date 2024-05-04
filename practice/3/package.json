@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "url": "^0.11.3"
   },
   "name": "3",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
