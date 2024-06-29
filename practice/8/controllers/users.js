@@ -109,11 +109,3 @@ export async function handleCreateUser(request, response) {
         });
     }
 }
-
-export default {
-    handleGetUsers,
-    handleGetUserById,
-    handleUpdateUser,
-    handleDeleteUser,
-    handleCreateUser,
-};
