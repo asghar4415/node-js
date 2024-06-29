@@ -5,3 +5,5 @@ model- collection
 Then we create a collection based on the model.
 
 
+if you want to check if mongodb is working properly, go on cmd and type mongosh
+
