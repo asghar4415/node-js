@@ -6,19 +6,19 @@ import { nanoid } from 'nanoid';
 export async function handleGetUrls(req, res)
     {
         const urls = await UrlModel.find();
+        console.log("api hit")
         
-        // return res.json({
-        //     message: "All URLs",
-        //     data: urls
+        return res.json({
+            message: "All URLs",
+            data: urls
 
-        // });
-        return res.render("home", {urls});
+        });
     }
 
-export async function handleShortenUrl(request, response) 
+export async function handleShortenUrl(req, res) 
     {
-        console.log(req.body);
         const body = req.body;
+        console.log(body);
 
         if(!body.url)
         {

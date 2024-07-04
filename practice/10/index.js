@@ -4,7 +4,7 @@
 
 import express from "express";
 import connectMongoDB from "./connection.js";
-import path from "path";
+
 import cors from 'cors';
 import router from "./routes/routes.js";
 
@@ -19,8 +19,6 @@ app.use(cors({ origin: "*" }))
 
 connectMongoDB("url-shortener")
 
-app.set("view engine", "ejs")
-app.set("views", path.join(path.resolve(), "./views"))
 
 app.use("/", router)
 
